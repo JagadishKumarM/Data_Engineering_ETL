@@ -1,3 +1,5 @@
+## Data Pipeline Automation with MYSQL, Python, and AWS
+
 This project showcases the end-to-end process of building an **ETL data pipeline** that collects and processes city information and weather data. 
 By leveraging web scraping techniques, a relational database, and cloud services, the pipeline is made robust and scalable. 
 This experience highlights my skills in data engineering, from writing efficient scraping scripts to managing databases and deploying cloud-based solutions.
