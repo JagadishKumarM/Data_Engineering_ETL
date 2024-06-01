@@ -93,10 +93,10 @@ df_cities
 # %%
 
 # Uploading the scraped data to a database, modify the details as per your local MySql/AWS RDS MySql database. 
-schema="report"
-host="127.0.0.1"
-user="root"
-password="Rathna03$"
+schema="your_schema_name"
+host="your_host_ID"
+user="your_user_name"
+password="your_password"
 port=3306
 con = f'mysql+pymysql://{user}:{password}@{host}:{port}/{schema}'
 
@@ -117,6 +117,10 @@ df_cities.dropna().to_sql('cities', con=engine, if_exists='replace', index=False
 '''The above line writes the contents of the DataFrame df_cities to a table named 'cities' in the database connected through the SQLAlchemy engine.
 dropna() is used to drop any rows with missing values from the DataFrame before writing it to the table'''
 
+# %%
+df_cities.loc[df_cities['City_Name'] == 'Delhi', 'Metro_Km2']=52500
+
+# A way of approach to update values to MySql database via python.
 connection = engine.connect() # Creation and establishment of a connection to the database via creation of execution engine.
 Update_stmt=text("UPDATE cities SET Metro_Km2=52500 WHERE City_Name='Delhi'") 
 #The text() function provided by SqlAlchemhy is used to parse the raw SQL data in python and excetue the command with the help of execution engine.
@@ -124,9 +128,6 @@ connection.execute(Update_stmt)
 connection.commit()#Commit to the executed operation to make the changes permanent
 connection.close()
 
-
-# %%
-df_cities.loc[df_cities['City_Name'] == 'Delhi', 'Metro_Km2']=52500
 
 # %%
 df_cities
