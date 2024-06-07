@@ -12,6 +12,7 @@ schema = "report"
 host = "127.0.0.1"
 user = "root"
 port = 3306
+password="your_password"
 con = f'mysql+pymysql://{user}:{password}@{host}:{port}/{schema}'
 
 engine = sa.create_engine(con)
