@@ -16,5 +16,9 @@ The primary objectives of this project are:
 
 -**Pipeline Automation**: Automate the data collection and storage process with AWS Lambda,RDS and S3.
 
+Check out my detailed article on this project:
+**https://medium.com/@mjkjagadishkumarofficial/web-scraping-to-cloud-deployment-end-to-end-data-engineering-pipeline-automation-with-mysql-0e1534fa2a4c**
+
 This project not only strengthened my understanding of data engineering but also enhanced my ability to work with various tools and technologies essential for building scalable data solutions. 
-If you have any questions or need further information, feel free to connect with me!
+Please feel free to connect with me, if you have any questions or need further information.
+Thank you!
