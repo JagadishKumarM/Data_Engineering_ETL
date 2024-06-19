@@ -1,4 +1,5 @@
-# %%
+# Kindly go through the 'README.md' file to get an overview about the project."
+
 import requests
 from bs4 import BeautifulSoup as bs
 import pandas as pd
